@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="avatar_alt">My Photo</string>
+    <string name="name_title">Nome:</string>
+    <string name="name">Jonatan Neves</string>
+    <string name="email_title">E-mail:</string>
+    <string name="email">jonneves@gmail.com</string>
+    <string name="degree_title">Superior em: (Curso)</string>
+    <string name="degree">Ciência da Computação</string>
+    <string name="education_title">Formação Acadêmica</string>
+    <string name="jobs_title">Formação Profissional</string>
+    <string name="title_activity_basic">Informações Pessoais</string>
+    <string name="title_activity_education">Formação Acadêmica</string>
+    <string name="title_activity_jobs">Formação Profissional</string>
+    <string name="graduation_title">Graduação:</string>
+    <string name="graduation">Bacharelado em Ciência da Computação - UFPR - 2003 / Análise e Desenvolvimento de Sistemas - Estácio de Sá - 2011</string>
+    <string name="pgraduation_title">Pós Graduação:</string>
+    <string name="pgraduation">Arquitetura de Software Distribuído - PUC Minas - 2015</string>
+    <string name="known_title">Softwares Conhecidos:</string>
+    <string name="known">Android, Java, JS, React, Angular</string>
+    <string name="xp_title">Experiência no mercado:</string>
+    <string name="xp_1">Optium Informática - Proprietário - 01/2003 - 07/2008</string>
+    <string name="xp_2">CELEPAR - Estagiário - 07/2003 - 07/2005</string>
+    <string name="xp_3">CELEPAR - Programador Pleno - 07/2005 - 07/2007</string>
+    <string name="xp_4">EloSoft - Líder Técnico - 07/2007 - 07/2008</string>
+    <string name="xp_5">EloSoft - Consultor - 07/2008 - 01/2012</string>
+    <string name="xp_6">Teclógica - Analista de Sistemas - 01/2012 - 06/2013</string>
+    <string name="xp_7">Senior Sistemas - Projetista de Sistemas - 06/2013</string>
+</resources>

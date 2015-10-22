@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context=".BasicDataActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:background="#d6ecf2">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#d6ecf2"
+            android:nestedScrollingEnabled="false"
+            android:alignmentMode="alignMargins">
+
+            <ImageView
+                android:layout_width="139dp"
+                android:layout_height="184dp"
+                android:id="@+id/avatar"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                android:src="@drawable/neves"
+                android:contentDescription="@string/avatar_alt"
+                android:layout_rowSpan="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/name_title"
+                android:id="@+id/name_title"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/email_title"
+                android:id="@+id/email_title"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/email"
+                android:id="@+id/email"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="49dp"
+                android:layout_height="61dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/degree_title"
+                android:id="@+id/degree_title"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/name"
+                android:id="@+id/name"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/degree"
+                android:id="@+id/degree"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/education_title"
+                android:id="@+id/education_button"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:background="@android:drawable/btn_default"
+                android:onClick="gotoEducation" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobs_title"
+                android:id="@+id/jobs_button"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:background="@android:drawable/btn_default"
+                android:onClick="gotoJobs" />
+
+        </GridLayout>
+    </ScrollView>
+
+</FrameLayout>

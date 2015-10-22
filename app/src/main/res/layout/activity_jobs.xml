@@ -1,0 +1,251 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context=".JobsActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:background="#d6ecf2">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#d6ecf2"
+            android:nestedScrollingEnabled="false"
+            android:alignmentMode="alignMargins">
+
+            <ImageView
+                android:layout_width="139dp"
+                android:layout_height="184dp"
+                android:id="@+id/avatar"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                android:src="@drawable/neves"
+                android:contentDescription="@string/avatar_alt"
+                android:layout_rowSpan="5" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/name"
+                android:id="@+id/name"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="12sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_margin="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/known_title"
+                    android:id="@+id/known_title"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="206dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/known"
+                    android:id="@+id/known"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_title"
+                    android:id="@+id/xp_title"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_1"
+                    android:id="@+id/xp_1"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_2"
+                    android:id="@+id/xp_2"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_3"
+                    android:id="@+id/xp_3"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_4"
+                    android:id="@+id/xp_4"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_5"
+                    android:id="@+id/xp_5"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_6"
+                    android:id="@+id/xp_6"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="8"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/xp_7"
+                    android:id="@+id/xp_7"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center|top"
+                    android:layout_row="9"
+                    android:layout_column="1"
+                    android:textAlignment="textStart"
+                    android:layout_columnSpan="3" />
+
+
+            </GridLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+</FrameLayout>
